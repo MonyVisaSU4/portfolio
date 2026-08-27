@@ -23,6 +23,7 @@
     overflow: hidden;
 }
 
+/* :nth-child(even) selects every even-numbered .project-card: the 2nd, 4th, 6th, and so on. */
 .project-card::before {
     content: '';
     position: absolute;

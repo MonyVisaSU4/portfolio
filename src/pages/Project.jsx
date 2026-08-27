@@ -6,21 +6,26 @@ const Project = () => {
     {
       name: "Zentrio",
       desc: "Web Application for Task Management at Korea Software HRD Center",
-      language: [
-        'NextJs',
-        'Spring Boot',
-        'Tailwind'
-      ],
+      language: ["NextJs", "Spring Boot", "Tailwind"],
       alt: "Zentiro - Task Management System",
-      image: zentrio
-    }
-  ]
+      image: zentrio,
+      source: "https://github.com/13-Generation-Basic-Course-Projects/zentrio-ui.git"
+    },
+    {
+      name: "Loan Management",
+      desc: "Web Application for Loan.",
+      language: ["Flask", "Bootstrap", "Jinja template engine"],
+      alt: "Loan Management - Web Application for Loan.",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6vENVQUHEl0GSnP2MB36po2ieXPoIy5gRx7xcuyl_uw&s=10",
+      source: "https://github.com/MonyVisaSU4/setec-y4-s1-adv-pp-midterm.git"
+    },
+  ];
   return (
     <>
       <div className="container">
         <h2 className="section-title">Some of the projects I've built</h2>
         <div className="projects-list">
-          {projects.map(item => (
+          {projects.map((item) => (
             <div className="project-card fade-in">
               <div className="project-image">
                 <div className="project-image-wrapper">
@@ -33,9 +38,7 @@ const Project = () => {
               </div>
               <div className="project-content">
                 <h3>{item.name}</h3>
-                <p>
-                  {item.desc}
-                </p>
+                <p>{item.desc}</p>
                 <div className="project-tags">
                   {item.language.map((subitem) => (
                     <span className="project-tag">{subitem}</span>
@@ -43,7 +46,7 @@ const Project = () => {
                 </div>
                 <div className="project-links">
                   <a
-                    href="https://github.com/13-Generation-Basic-Course-Projects/zentrio-ui.git"
+                    href={item.source}
                     className="project-link secondary"
                   >
                     <svg
