@@ -1,0 +1,91 @@
+.skills {
+    background: var(--bg-primary);
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 24px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    min-width: 100px;
+    transition: all var(--transition-normal);
+    cursor: default;
+}
+
+.skill-item:hover {
+    transform: translateY(-6px);
+    border-color: var(--border-color-light);
+    box-shadow: var(--shadow-card-hover);
+    background: var(--bg-card-hover);
+}
+
+.skill-icon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.skill-icon.js { background: rgba(247, 223, 30, 0.15); color: #f7df1e; }
+.skill-icon.react { background: rgba(97, 218, 251, 0.15); color: #61dafb; }
+.skill-icon.node { background: rgba(104, 159, 56, 0.15); color: #689f38; }
+.skill-icon.express { background: rgba(255, 255, 255, 0.1); color: #ffffff; }
+.skill-icon.mongo { background: rgba(77, 175, 80, 0.15); color: #4daf50; }
+.skill-icon.git { background: rgba(240, 80, 50, 0.15); color: #f05032; }
+.skill-icon.html { background: rgba(227, 79, 38, 0.15); color: #e34f26; }
+.skill-icon.css { background: rgba(21, 114, 182, 0.15); color: #1572b6; }
+.skill-icon.ts { background: rgba(49, 120, 198, 0.15); color: #3178c6; }
+.skill-icon.next { background: rgba(255, 255, 255, 0.1); color: #ffffff; }
+.skill-icon.python { background: rgba(55, 118, 171, 0.15); color: #3776ab; }
+.skill-icon.firebase { background: rgba(255, 196, 0, 0.15); color: #ffc400; }
+.skill-icon.tailwind { background: rgba(56, 189, 248, 0.15); color: #38bdf8; }
+.skill-icon.redux { background: rgba(118, 74, 188, 0.15); color: #764abc; }
+.skill-icon.docker { background: rgba(33, 150, 243, 0.15); color: #2196f3; }
+.skill-icon.aws { background: rgba(255, 196, 0, 0.443); color: #ff9900; }
+/* Java */
+.skill-icon.java {
+    background: rgba(248, 152, 32, 0.15);
+    color: #F89820;
+}
+
+/* Spring Boot */
+.skill-icon.spring {
+    background: rgba(109, 179, 63, 0.15);
+    color: #6DB33F;
+}
+
+/* Hibernate */
+.skill-icon.hibernate {
+    background: rgba(89, 102, 108, 0.15);
+    color: #59666C;
+}
+
+/* REST API (OpenAPI) */
+.skill-icon.rest {
+    background: rgba(107, 165, 57, 0.15);
+    color: #6BA539;
+}
+
+.skill-name {
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+    white-space: nowrap;
+}

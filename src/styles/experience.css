@@ -1,0 +1,116 @@
+.experience {
+    background: var(--bg-secondary);
+}
+
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.experience-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 28px 32px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    border-left: 4px solid;
+    transition: all var(--transition-normal);
+    position: relative;
+    overflow: hidden;
+}
+
+.experience-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(34, 197, 94, 0.02));
+    pointer-events: none;
+}
+
+.experience-card:nth-child(1) { border-left-color: var(--accent-green); }
+.experience-card:nth-child(2) { border-left-color: var(--accent-blue); }
+.experience-card:nth-child(3) { border-left-color: var(--accent-orange); }
+.experience-card:nth-child(4) { border-left-color: var(--accent-purple); }
+
+.experience-card:hover {
+    transform: translateX(6px);
+    box-shadow: var(--shadow-card);
+    border-color: var(--border-color-light);
+}
+
+.exp-badge {
+    flex-shrink: 0;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.exp-badge.internship {
+    background: rgba(34, 197, 94, 0.15);
+    color: var(--accent-green);
+}
+
+.exp-badge.contract {
+    background: rgba(249, 115, 22, 0.15);
+    color: var(--accent-orange);
+}
+
+.exp-info {
+    flex: 1;
+}
+
+.exp-info h3 {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: var(--text-primary);
+}
+
+.exp-info .company {
+    font-size: 0.9rem;
+    color: var(--accent-green);
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.exp-info p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.exp-meta {
+    flex-shrink: 0;
+    text-align: right;
+}
+
+.exp-date {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.exp-location {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 4px;
+}
+
+.exp-badge.learning {
+    background: rgba(59, 130, 246, 0.15);
+    color: #3b82f6;
+}
