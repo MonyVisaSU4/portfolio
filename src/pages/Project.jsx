@@ -10,15 +10,7 @@ const Project = () => {
       alt: "Zentiro - Task Management System",
       image: zentrio,
       source: "https://github.com/13-Generation-Basic-Course-Projects/zentrio-ui.git"
-    },
-    {
-      name: "Loan Management",
-      desc: "Web Application for Loan.",
-      language: ["Flask", "Bootstrap", "Jinja template engine"],
-      alt: "Loan Management - Web Application for Loan.",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6vENVQUHEl0GSnP2MB36po2ieXPoIy5gRx7xcuyl_uw&s=10",
-      source: "https://github.com/MonyVisaSU4/setec-y4-s1-adv-pp-midterm.git"
-    },
+    }
   ];
   return (
     <>
