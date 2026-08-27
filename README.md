@@ -1,16 +1,79 @@
-# React + Vite
+# Mony Visa - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio website for **Mony Visa**, a Management Information Systems student at SETEC Institute and an aspiring full-stack developer based in Phnom Penh, Cambodia.
 
-Currently, two official plugins are available:
+The site presents a responsive, single-page experience with smooth anchor navigation and scroll-triggered reveal animations. It highlights Visa's background, technical skills, current availability, project work, certification, and contact details.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Sections
 
-## React Compiler
+- **Home** - Introduction, location, study focus, social profiles, and CV link
+- **About** - Education, development interests, and current goals
+- **Skills** - JavaScript, React, Next.js, Tailwind CSS, Java, Spring Boot, Hibernate/JPA, REST APIs, Git, MongoDB, and AWS
+- **Experience** - Current availability and first-job search status
+- **Projects** - Zentrio task management application built with Next.js, Spring Boot, and Tailwind CSS
+- **Certifications** - Korea Software HRD Center Basic Course certification
+- **Contact** - Email, phone, GitHub, and LinkedIn links
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Built With
 
-## Expanding the ESLint configuration
+- [React](https://react.dev/) 19
+- [Vite](https://vite.dev/) 8
+- JavaScript and JSX
+- CSS with responsive layouts and scroll animations
+- Google Fonts (Inter and Outfit)
+- Simple Icons CDN for technology icons
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18 or newer
+- npm
+
+### Installation
+
+Clone the repository, open the project directory, and install dependencies:
+
+```bash
+git clone <repository-url>
+cd portfolio
+npm install
+```
+
+### Run locally
+
+Start the Vite development server:
+
+```bash
+npm run dev
+```
+
+Open the local URL shown in the terminal, usually `http://localhost:5173`.
+
+## Available Scripts
+
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the development server with hot module replacement |
+| `npm run build` | Create an optimized production build in `dist/` |
+| `npm run preview` | Preview the production build locally |
+| `npm run lint` | Run ESLint across the project |
+
+## Project Structure
+
+```text
+src/
+├── assets/images/       Portfolio and project images
+├── components/          Shared UI components such as the navbar
+├── layouts/             Page composition and section layout
+├── pages/               Portfolio sections
+└── styles/              Global, section, responsive, and animation styles
+```
+
+The main page is assembled in `src/layouts/Main.jsx`. Navigation uses section IDs, so adding or renaming a section requires updating both the layout and `src/components/Navbar.jsx`.
+
+## Notes
+
+- Technology icons in the Skills section are loaded from external Simple Icons URLs, so an internet connection is needed for those icons to appear.
+- The CV link, social profiles, project repository, and contact information are defined in the relevant components under `src/`.
+- React Compiler is not enabled in this project.
