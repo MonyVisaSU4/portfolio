@@ -43,13 +43,13 @@ const Navbar = () => {
                 Projects
               </a>
             </li>
-            <li>
+            {/* <li>
               <a 
                 href="https://drive.google.com/file/d/1psqxqEm5SsVzitgywTUwT2JiiVNM-Lhu/view?usp=drive_link" 
                 className="nav-cta" target="_blank" onClick={closeMenu}>
                 Preview CV
               </a>
-            </li>
+            </li> */}
           </ul>
           <button
             className={`nav-toggle ${isOpen ? "active" : ""}`}
