@@ -9,6 +9,7 @@ const Project = () => {
       language: ["NextJs", "Spring Boot", "Tailwind"],
       alt: "Zentiro - Task Management System",
       image: zentrio,
+      text: "View Figma",
       source: "https://www.figma.com/proto/73E7bqg2USMoNZMNaCDDJi/Zentrio?node-id=2200-107151&t=IP3QLX21rl0aTnkA-1&scaling=scale-down-width&content-scaling=fixed&page-id=38%3A12588&starting-point-node-id=2928%3A114191"
     },
     {
@@ -17,7 +18,8 @@ const Project = () => {
       language: ["Flask", "Bootstrap", "Jinja template engine"],
       alt: "Loan Management - Web Application for Loan.",
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6vENVQUHEl0GSnP2MB36po2ieXPoIy5gRx7xcuyl_uw&s=10",
-      source: "https://github.com/MonyVisaSU4/setec-y4-s1-adv-pp-midterm.git"
+      text: "View Demo",
+      source: "https://youtu.be/kpYMk--HBaw"
     },
   ];
   return (
@@ -50,7 +52,7 @@ const Project = () => {
                     className="project-link secondary"
                     target="_blank"
                   >
-                    View
+                    {item.text}
                   </a>
                 </div>
               </div>
